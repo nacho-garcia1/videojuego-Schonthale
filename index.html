@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schönthale: El Último Recuperatorio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icono.jpg">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="logo.jpg" alt="Logo Schönthale" class="logo">
+            <div class="title-container">
+                <h1>🎮 Schönthale: El Último Recuperatorio 🎓</h1>
+                <p>Un juego educativo inspirado en Undertale</p>
+            </div>
+        </div>        
+    </header>
+
+    <nav>
+        <a href="#presentacion">Quiénes Somos</a> |
+        <a href="#motivacion">Motivación</a> |
+        <a href="#descripcion">El Juego</a> |
+        <a href="#equipo">Equipo</a> |
+        <a href="#inspiracion">Inspiración</a>
+    </nav>
+
+    <section id="presentacion">
+        <h2>Quiénes Somos</h2>
+        <p>Somos estudiantes de 5° año de la Escuela Secundaria Schönthal, orientación en <strong>Informática</strong>. Este proyecto combina programación, arte y música para crear una experiencia educativa única.</p>
+    </section>
+
+    <section id="motivacion">
+        <h2>Nuestra Motivación</h2>
+        <p>Decidimos crear este juego porque creemos que el aprendizaje puede ser divertido e interactivo. Queremos que las instancias de recuperación escolar se transformen en aventuras llenas de desafíos y creatividad.</p>
+    </section>
+
+    <section id="descripcion">
+        <h2>Sobre el Juego</h2>
+        <p><em>Schönthale: El Último Recuperatorio</em> es un juego educativo que adapta el sistema de combate de Undertale a un contexto escolar. En lugar de combates físicos, el jugador enfrenta a profesores respondiendo preguntas de distintas materias para aprobarlas.</p>
+        <ul>
+            <li>🎯 <strong>Objetivo:</strong> Responder preguntas para “ganar” batallas académicas.</li>
+            <li>🕹️ <strong>Jugabilidad:</strong> Basada en turnos, con opciones para resolver, dialogar o usar objetos.</li>
+            <li>🎨 <strong>Estética:</strong> Pixel art retro inspirado en Undertale.</li>
+        </ul>
+    </section>
+
+    <section id="equipo">
+        <h2>Equipo de Trabajo</h2>
+        <ul>
+            <li>💻 Programadores: Implementan mecánicas y motor de juego en Godot.</li>
+            <li>🎨 Diseñador gráfico: Pixel art y estética retro.</li>
+            <li>🎵 Compositor: Banda sonora y efectos de sonido.</li>
+            <li>✍️ Guionista: Diálogos, narrativa y preguntas.</li>
+            <li>🧪 Testers: Prueban y optimizan la jugabilidad.</li>
+        </ul>
+    </section>
+
+    <section id="inspiracion">
+        <h2>Inspiración</h2>
+        <p>Tomamos como referencia Undertale por su jugabilidad innovadora, narrativa profunda y estética única. Lo adaptamos para que las “batallas” sean educativas y fomenten el aprendizaje.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Proyecto Escolar Schönthale | Inspirado en Undertale de Toby Fox</p>
+    </footer>
+
+    <!-- Script para animar secciones al scrollear -->
+    <script>
+        document.addEventListener("scroll", () => {
+            document.querySelectorAll("section").forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    sec.classList.add("visible");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
