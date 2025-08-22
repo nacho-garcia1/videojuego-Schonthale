@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
 }
 
-/* ----- HEADER ----- */
+
 header {
     display: flex;
     background: linear-gradient(90deg, #3d3d3d, #1a1a1a);
@@ -46,7 +46,7 @@ header p {
     color: #ccc;
 }
 
-/* ----- NAV ----- */
+
 nav {
     text-align: center;
     margin-top: 10px;
@@ -66,7 +66,7 @@ nav a:visited {
     color: white;
 }
 
-/* ----- SECCIONES ----- */
+
 section {
     max-width: 900px;
     margin: auto;
@@ -94,7 +94,7 @@ section h2 {
     animation-delay: 1s;
 }
 
-/* ----- TEXTO ----- */
+
 section p {
     font-size: 1.1rem;
     text-align: justify;
@@ -103,7 +103,7 @@ section p {
     margin-bottom: 1rem;
 }
 
-/* Caja destacada */
+
 .caja-destacada {
     background: rgba(255, 204, 0, 0.1);
     border: 2px solid #ffcc00;
@@ -116,7 +116,7 @@ section p {
     box-shadow: 0 0 10px #ffcc00;
 }
 
-/* ----- EQUIPO GRID ----- */
+
 .equipo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -136,7 +136,7 @@ section p {
     box-shadow: 0 0 15px #ffcc00;
 }
 
-/* ----- FOOTER ----- */
+
 footer {
     text-align: center;
     padding: 1rem;
@@ -145,7 +145,6 @@ footer {
     border-top: 3px solid #ffcc00;
 }
 
-/* ----- KEYFRAMES ----- */
 @keyframes aparecerZoom {
     0% { opacity: 0; transform: scale(0.7); }
     100% { opacity: 1; transform: scale(1); }
