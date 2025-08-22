@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
 }
 
+/* ----- HEADER ----- */
 header {
     display: flex;
     background: linear-gradient(90deg, #3d3d3d, #1a1a1a);
@@ -15,19 +16,20 @@ header {
 
 .header-container {
     display: flex;
-    align-items: center;      
-    justify-content: center;  
-    gap: 120px;                
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
 }
+
 .logo {
-    max-width: 150px;         
-    height: auto;             
+    max-width: 130px;
+    height: auto;
     border: 3px solid #ffcc00;
     border-radius: 10px;
     box-shadow: 0 0 15px #ffcc00;
-    animation: aparecerZoom 2s ease-out;
+    animation: aparecerZoom 3s ease-out;
 }
-
 
 .title-container {
     text-align: center;
@@ -44,7 +46,7 @@ header p {
     color: #ccc;
 }
 
-
+/* ----- NAV ----- */
 nav {
     text-align: center;
     margin-top: 10px;
@@ -54,7 +56,7 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-    transition: color 0.4s, text-shadow 0.4s;
+    transition: color 0.5s, text-shadow 0.5s;
 }
 nav a:hover {
     color: #ffcc00;
@@ -64,7 +66,7 @@ nav a:visited {
     color: white;
 }
 
-
+/* ----- SECCIONES ----- */
 section {
     max-width: 900px;
     margin: auto;
@@ -73,7 +75,7 @@ section {
 
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 1.2s ease, transform 1.2s ease;
+    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 section.visible {
     opacity: 1;
@@ -88,20 +90,50 @@ section h2 {
     white-space: nowrap;
     border-right: 2px solid #ffffff;
     width: 0;
-    animation: escribir 3s steps(25) forwards;
-    animation-delay: 0.5s; 
+    animation: escribir 4s steps(30) forwards;
+    animation-delay: 1s;
 }
 
-
-ul {
-    list-style: none;
-    padding: 0;
+/* ----- TEXTO ----- */
+section p {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 1rem;
 }
-ul li {
+
+/* Caja destacada */
+.caja-destacada {
+    background: rgba(255, 204, 0, 0.1);
+    border: 2px solid #ffcc00;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    font-weight: bold;
+    color: #ffcc00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* ----- EQUIPO GRID ----- */
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+.equipo-card {
     background: rgba(255, 255, 255, 0.05);
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    border-radius: 5px;
+    border: 2px solid #333;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.equipo-card:hover {
+    transform: scale(1.05);
+    border-color: #ffcc00;
+    box-shadow: 0 0 15px #ffcc00;
 }
 
 /* ----- FOOTER ----- */
